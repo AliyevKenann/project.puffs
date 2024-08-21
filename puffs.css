@@ -970,10 +970,52 @@ h5 {
 }
 
 /* Single Product */
+.prodetails{
+    display: flex;
+    margin-top: 20px;
+}
+
+
 #prodetails .single-pro-image{
-    width: 40%;
+    width: 90%;
     margin-right: 50px;
 }
+
+#prodetails .single-pro-details{
+    width: 50%;
+    padding-top: 80px;
+}
+
+#prodetails .single-pro-details h4{
+    padding: 40px 0 20px 0;
+}
+
+#prodetails .single-pro-details h2{
+    font-size: 26px;
+}
+
+#prodetails .single-pro-details input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+#prodetails .single-pro-details button{
+    width: 110px;
+    height: 48px;
+    border-radius: 4px;
+    background: #088178;
+    color: #fff;
+}
+
+#prodetails .single-pro-details span{
+    line-height: 25px;
+}
+
 .small-img-group{
     display: flex;
     justify-content: space-between;
@@ -984,7 +1026,10 @@ h5 {
     cursor: pointer;
 }
 
-
+.featured-products{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px;   
+}
 
 
 
@@ -1202,5 +1247,57 @@ h5 {
     color: gray;
     font-size: 18px;
     margin-top: 15px;
+}
+
+#page-header {
+    background-image: url(./image.puffs/1-ci\ shop\ shekli.png);
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+#page-header h2 {
+    color: #05ffea;
+    font-size: 35px;
+}
+#page-header p {
+    color: #05ffea;
+    font-size: 20px;
+}
+
+#prodetails {
+    display: flex;
+    flex-direction: column;
+}
+
+.single-pro-image{
+    margin-top: 100px;
+    
+}
+#product2 .pro-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    gap: 20px;
+     width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#product2 .pro {
+    width: 80%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 30px 0;
+    transition: 0.2s ease;
 }
 }
