@@ -59,13 +59,14 @@
 #navbar li a.active::after,
 #navbar li a:hover::after {
     content: "";
-    width: 52%;
+    width: 0%;
     height: 2px;
     background: rgb(237, 81, 107);
     position: absolute;
     bottom: -4px;
     left: 20px;
 }
+
 
 #mobile {
     display: none;
@@ -104,7 +105,6 @@
     font-family: "Protest Riot", sans-serif;
     font-weight: 100;
     font-style: normal;
-    ;
 }
 
 #product1 h1,
@@ -115,6 +115,7 @@ h3 {
 
 #product1 .pro {
     width: 100%;
+    min-height: 250px;
     padding: 10px 12px;
     border: 1px solid #cce7d0;
     border-radius: 8px;
@@ -186,6 +187,7 @@ h3 {
     color: #088178;
     border: 1px solid #090f0a;
 
+
 }
 
 #product2 .pro-container {
@@ -202,7 +204,6 @@ h3 {
     font-family: "Protest Riot", sans-serif;
     font-weight: 100;
     font-style: normal;
-    ;
 }
 
 #product2 h1,
@@ -831,7 +832,12 @@ h5 {
     margin-top: 60px;
     background-color: #088178;
     height: 50%;
+}
 
+#newletter2 {
+    margin-top: 60px;
+    background-color: rgb(243, 175, 48);
+    height: 50%;
 }
 
 .newlet {
@@ -847,7 +853,7 @@ h5 {
 }
 
 .newstext p span {
-    color: #ffbd27;
+    color: #0008ff;
 }
 
 .from input {
@@ -926,7 +932,7 @@ h5 {
 
 /* Shop Page */
 #page-header {
-    background-image: url(./image.puffs/1.png);
+    background-image: url(./image.puffs/1-ci\ shop\ shekil.png);
     width: 100%;
     height: 50vh;
     background-size: cover;
@@ -939,12 +945,12 @@ h5 {
 }
 
 #page-header h2 {
-    color: #05ffea;
+    color: #fff;
     font-size: 80px;
 }
 
 #page-header p {
-    color: #05ffea;
+    color: #fff;
     font-size: 30px;
 }
 
@@ -964,26 +970,265 @@ h5 {
 
 /* Single Product */
 #prodetails .single-pro-image {
-    width: 40%;
-    margin-right: 50px;
+    width: 70%;
+    margin-left: 150px;
+    margin-top: 20px;
 }
 
-.small-img-group {
+#prodetails .small-img-group {
     display: flex;
     justify-content: space-between;
 }
 
-.small-img-col {
+#prodetails .small-img-col {
     flex-basis: 24%;
     cursor: pointer;
 }
 
+#prodetails .single-pro-details {
+    margin-top: 80px;
+}
+
+#prodetails .single-pro-details h4 {
+    margin-top: 20px;
+}
+
+#prodetails .single-pro-details h2 {
+    margin-top: 20px;
+}
 
 
+#prodetails .single-pro-details input {
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+#prodetails .single-pro-details input:focus {
+    outline: none;
+}
+
+#prodetails .single-pro-details button {
+    background: #088178;
+    color: #fff;
+    width: 150px;
+    height: 47px;
+    border-radius: 3px;
+}
+
+/* About Page */
+#page-header.about-header {
+    background-image: url("./image.puffs/about.png")
+}
+
+#about-head {
+    margin: 20px;
+}
+
+#about-head img {
+    width: 100%;
+    height: auto;
+}
+
+#about-head p {
+    font-size: 14px;
+}
+
+#about-app {
+    text-align: center;
+}
+
+#about-app .video {
+    width: 70%;
+    height: 100%;
+    margin: 30px auto 0 auto;
+}
+
+#about-app .video video {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+/* Contact Page */
 
 
+#contact-details .details {
+    width: 85%;
+}
 
+#contact-details .details span,
+#form-details form span {
+    font-size: 12px;
+}
 
+#contact-details .details h2,
+#form-details form h2 {
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+
+#contact-details .details h3 {
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+
+#contact-details .details li {
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+}
+
+#contact-details .details li i {
+    font-size: 14px;
+    padding-right: 22px;
+    margin-top: 5px;
+}
+
+#contact-details .details li p {
+    margin: 0;
+    font-size: 14px;
+}
+
+#contact-details .map {
+    width: 100%;
+    height: 400px;
+    margin-top: 30px;
+}
+
+#contact-details .map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+#form-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 80px;
+    border: 1px solid #e1e1e1;
+}
+
+#form-details form {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#form-details form input,
+#form-details form textarea {
+    width: 900px;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #e1e1e1;
+}
+
+#form-details form button {
+    width: 100px;
+    height: 50px;
+    background-color: #088178;
+    color: #fff;
+}
+
+#form-details .people div {
+    padding-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+}
+
+#form-details .people div img {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+#form-details .people div p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 25px;
+}
+
+#form-details .people div p span {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+
+.people {
+    margin-top: 20px;
+    margin-left: 90px;
+}
+
+/* Cart Page */
+
+#cart{
+    overflow-x: auto;
+}
+
+#cart table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#cart table img {
+    width: 70px;
+}
+#cart table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+#cart table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+}
+#cart table td:nth-child(3){
+    width: 250px;
+    text-align: center;
+}
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6){
+    width: 150px;
+    text-align: center;
+}
+
+#cart table td:nth-child(5) input {
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+}
+
+#cart table thead {
+    border: 1px solid #e2e9e2;
+    border-left: none;
+    border-right: none;
+}
+
+#cart table thead td {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+
+#cart table tbody tr td {
+    padding-top: 15px;
+
+}
+
+#cart table tbody td {
+    font-size: 13px;
+    padding: 15px;
+}
 
 
 /* Start Media Query */
@@ -1106,24 +1351,30 @@ h5 {
 
 
     .foto-grid:nth-child(1) {
-        height: 100%;
+        width: 350px;
+        height: 200px;
         grid-row: 1 / span 1;
-        background: url(./image.puffs/1.png);
+        grid-column: 1 / span 14;
+        background: url(./image.puffs/1-ci\ shop\ shekil.png);
         background-size: cover;
         background-repeat: no-repeat;
     }
 
     .foto-grid:nth-child(2) {
-        height: 100%;
-        grid-row: 1 / span 2;
+        width: 350px;
+        height: 200px;
+        grid-row: 2 / span 2;
+        grid-column: 1 / span 14;
         background: url(./image.puffs/2.png);
         background-size: cover;
         background-repeat: no-repeat;
     }
 
     .foto-grid:nth-child(3) {
-        height: 100%;
-        grid-row: 1 / span 1;
+        width: 350px;
+        height: 200px;
+        grid-row: 4 / span 4;
+        grid-column: 1 / span 14;
         background: url(./image.puffs/3.png);
         background-size: cover;
         background-repeat: no-repeat;
@@ -1131,16 +1382,20 @@ h5 {
     }
 
     .foto-grid:nth-child(4) {
-        height: 100%;
-        grid-row: 2 / span 1;
+        width: 350px;
+        height: 200px;
+        grid-row: 8 / span 8;
+        grid-column: 1 / span 14;
         background: url(./image.puffs/4.png);
         background-size: cover;
         background-repeat: no-repeat;
     }
 
     .foto-grid:nth-child(5) {
-        height: 100%;
-        grid-row: 2 / span 1;
+        width: 350px;
+        height: 200px;
+        grid-row: 16 / span 16;
+        grid-column: 1 / span 14;
         background: url(./image.puffs/5.png);
         background-size: cover;
         background-repeat: no-repeat;
@@ -1149,22 +1404,28 @@ h5 {
 
 
     .foto-grid:nth-child(6) {
-        padding: 50%;
-        height: 100px;
-        width: 100px;
-        grid-column: 1 / span 2;
+        /* padding: 50%; */
+        width: 350px;
+        height: 200px;
+        grid-row: 32 / span 32;
+        grid-column: 1 / span 14;
         background: url(./image.puffs/6.png);
         background-size: cover;
         background-repeat: no-repeat;
     }
 
     .foto-grid:nth-child(7) {
-        height: 100%;
-        width: 100%;
-        grid-column: 3 / span 3;
+        width: 350px;
+        height: 200px;
+        grid-row: 53 / span 53;
+        grid-column: 1 / span 14;
         background: url(./image.puffs/7.png);
         background-size: cover;
         background-repeat: no-repeat;
+    }
+
+    #product2 {
+        margin-top: 900px;
     }
 
     .logo2 {
@@ -1203,13 +1464,92 @@ h5 {
     }
 
     .working-hours {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .Contact1 div {
         color: gray;
         font-size: 18px;
         margin-top: 15px;
+    }
+
+    #page-header {
+        background-image: url(./image.puffs/1-ci\ shop\ shekil.png);
+        width: 100%;
+        height: 40vh;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        padding: 14px;
+    }
+
+    #page-header h2 {
+        color: #fff;
+        font-size: 55px;
+        margin-top: 50px;
+    }
+
+    #page-header p {
+        color: #fff;
+        font-size: 18px;
+    }
+
+    .from input {
+        font-size: 14px;
+        width: 280px;
+        border: 1px solid transparent;
+        border-radius: 7px;
+        outline: none;
+    }
+
+    #prodetails .single-pro-image {
+        width: 80%;
+        margin-left: 40px;
+        margin-top: 80px;
+    }
+
+    #prodetails .single-pro-details {
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    #product1 {
+        margin-top: 85px;
+    }
+
+    #product2 {
+        margin-top: 900px;
+    }
+
+    #prodetails .single-pro-details {
+        margin-top: 15px;
+    }
+
+    #about-app .video {
+        width: 100%;
+    }
+
+    /* #form-details form input,
+    #form-details form textarea{
+        width: 250px;
+    } */
+
+    .from-input{
+        margin-left: -60px;
+    }
+
+    .people {
+        margin-top: 50px;
+        margin-left: 0px;
+    }
+
+
+    #page-header p {
+        color: #fff;
+        font-size: 16px;
     }
 }
 
@@ -1218,5 +1558,19 @@ h5 {
         .col-lg-6:nth-child(2) {
             order: -1;
         }
+    }
+
+    #form-details form input,
+    #form-details form textarea{
+        width: 250px;
+    }
+
+    .from-input{
+        margin-left: -60px;
+    }
+
+    .people {
+        margin-top: 50px;
+        margin-left: 0px;
     }
 }

@@ -28,7 +28,6 @@
             <ul id="navbar">
                 <li><a href="puffs.html">Home</a></li>
                 <li><a class="active" href="shop.html">Shop</a></li>
-                <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
@@ -68,13 +67,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12  col-12 flex-wrap ">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 flex-wrap ">
                     <div class="single-pro-details">
                         <h5>VOZOL</h5>
                         <h4>STAR 12000</h4>
                         <h2>29.99 AZN</h2>
                         <input type="number" value="1">
-                        <button class="normal">Add To Cart</button>
+                        <button class="normal" onclick="addToBasket({id: 1, name: 'Telefon', price: 5000, quantity: 1})">Add To Cart</button>
                         <h4>Product Details</h4>
                         <span>Nikotin: 5% <br>
                             Maye həcmi 22 ml<br>
@@ -85,7 +84,7 @@
         </div>
     </section>
 
-    <section id="product2">
+    <section id="product1">
         <div class="featured-products">
             <h1>Featured Products</h1>
             <h6>Summer Collection New Morden Desinge</h6>
@@ -340,23 +339,6 @@
         </div>
     </footer>
 
-    <script>
-        var MainImg = document.getElementById("MainImg");
-        var smallimg = document.getElementsByClassName("small-img");
-
-        smallimg[0].onclick = function () {
-            MainImg.src = smallimg[0].src;
-        }
-        smallimg[1].onclick = function () {
-            MainImg.src = smallimg[1].src;
-        }
-        smallimg[2].onclick = function () {
-            MainImg.src = smallimg[2].src;
-        }
-        smallimg[3].onclick = function () {
-            MainImg.src = smallimg[3].src;
-        }
-    </script>
 
 
     <script src="./puffs.js"></script>
